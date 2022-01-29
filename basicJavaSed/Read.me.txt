@@ -1,0 +1,32 @@
+I made a package that you can import to your project.
+Simple and easy to use:
+
+Sed.substitute(filePath,wordToFind,wordToReplace)
+
+Use Sed.substitute() to replace a word in a text.
+This method returns String type.
+
+substituteAndApply(filePath,wordToFind,wordToReplace)
+Use substituteAndApply() to replace a word in a text and edit the file at the same time.
+This method does not return a String but edits the file directly.
+
+filePath -> the path and name of the file.
+wordToFind -> the word that you want to be replaced with your chosen word.
+wordToReplace -> the word you want to be used to replace the other one.
+All of them are case sensitive.
+
+SRC \:
+basicSED folder:
+-FileEditor is used to read and write txt files.
+-Sed is used to substitute or substituteAndApply. (can be added more)
+
+textFilesForTesting folder: (those are txt files)
+-Test1, Test2, Test3 are used to test substitute method.
+-TestFileEditor is used to test reading functions of fileEditor.
+-TestSubstituteAndApply is used to test substituteAndApply method.
+
+test folder:
+-FileEditor unit test.
+-SedTest unit test.
+
+Main method is there for example.
